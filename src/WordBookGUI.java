@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.Dimension;
 import java.util.ArrayList;
 
 public class WordBookGUI extends javax.swing.JFrame{
@@ -12,31 +13,48 @@ public class WordBookGUI extends javax.swing.JFrame{
 
     private void initComponents() {
 
-
         WordListButton = new ArrayList<javax.swing.JButton>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("My WordBook");
 
         WordBook myWordBook = test_wordbook();
-        int idx = 0;
-        for (javax.swing.JButton button : WordListButton) {
-            String text = myWordBook.MyLists.get(idx).WordListName;
-            button.setText(text);
+
+        for (WordList wl : myWordBook.MyLists) {
+            javax.swing.JButton button = new javax.swing.JButton();
+            button.setText(wl.WordListName);
+            WordListButton.add(button);
         }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
 
-        layout.setVerticalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                            .addComponent(WordListButton.get(0), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addComponent(WordListButton.get(1))
-                            .addComponent(WordListButton.get(2)))));
-        pack();
+        layout.setAutoCreateGaps(true);
+        layout.setAutoCreateContainerGaps(true);
+
+        GroupLayout.SequentialGroup hGroup = layout.createSequentialGroup();
+
+        // Add horizontal and Vertical group, the layout should look like this:
+        // First Group
+        // Second Group
+        // Third Group
+        GroupLayout.Group g = layout.createParallelGroup();
+
+        for (javax.swing.JButton button : WordListButton) {
+            g.addComponent(button);
+        }
+        hGroup.addGroup(g);
+
+        layout.setHorizontalGroup(hGroup);
+
+        GroupLayout.SequentialGroup vGroup = layout.createSequentialGroup();
+
+        for (javax.swing.JButton button : WordListButton) {
+            vGroup.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(button));
+        }
+
+        layout.setVerticalGroup(vGroup);
+        //pack();
 
     }
 
@@ -59,16 +77,14 @@ public class WordBookGUI extends javax.swing.JFrame{
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new WordBookGUI().setVisible(true);
+                WordBookGUI wbg = new WordBookGUI();
+                wbg.setPreferredSize(new Dimension(500, 500));
+                wbg.pack();
+                wbg.setVisible(true);
+
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel celsiusLabel;
-    private javax.swing.JButton convertButton;
-    private javax.swing.JLabel fahrenheitLabel;
-    private javax.swing.JTextField tempTextField;
-    // End of variables declaration//GEN-END:variables
 
 }
