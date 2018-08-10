@@ -1,7 +1,6 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import WordEntry;
 
 public class WordList {
     ArrayList<WordEntry> ActiveWords;
