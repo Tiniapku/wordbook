@@ -11,8 +11,12 @@ public class WordEntry {
     Integer mem_times;
     Boolean active;
 
-    public WordEntry() {
-
+    public WordEntry(String word, String def) {
+        this.word = word;
+        this.def = def;
+        this.example = "";
+        this.ans = "";
+        this.notes = "";
     }
 
     public WordEntry(String word, String def, String example, String ans) {

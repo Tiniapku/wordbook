@@ -69,8 +69,8 @@ public class WordBookGUI extends JFrame
 
     public void actionPerformed(ActionEvent e) {
 
-        WordList wl = myWordBook.MyLists.get(Integer.parseInt(e.getActionCommand()));
-        WordListGUI wl_page = new WordListGUI(wl);
+        int idx = Integer.parseInt(e.getActionCommand());
+        WordListGUI wl_page = new WordListGUI(idx);
         wl_page.setPreferredSize(new Dimension(this.page_width, this.page_height));
         wl_page.pack();
         wl_page.setVisible(true);

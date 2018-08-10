@@ -1,20 +1,35 @@
 import javax.swing.*;
 import java.awt.Dimension;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class WordListGUI extends javax.swing.JFrame {
+public class WordListGUI extends WordBookGUI
+                         implements ActionListener {
     ArrayList<javax.swing.JLabel> words;
     ArrayList<javax.swing.JButton> EditWordButton;
     ArrayList<javax.swing.JButton> RemoveWordButton;
     javax.swing.JButton AddNewButton;
     javax.swing.JButton StartButton;
     javax.swing.JButton BackButton;
+    int word_list_idx;
 
-    public WordListGUI(WordList wl) {
-        initComponents(wl);
+    public WordListGUI(int idx) {
+        this.word_list_idx = idx;
+        initComponents(idx);
     }
 
-    private void initComponents(WordList wl) {
+    public void actionPerformed(ActionEvent e) {
+       if (e.getSource() == AddNewButton) {
+           AddNewGUI AddNewPage = new AddNewGUI(word_list_idx);
+           AddNewPage.setPreferredSize(new Dimension(this.page_width, this.page_height));
+           AddNewPage.pack();
+           AddNewPage.setVisible(true);
+        }
+    }
+
+    private void initComponents(Integer wl_idx) {
         words = new ArrayList<JLabel>();
         EditWordButton = new ArrayList<JButton>();
         RemoveWordButton = new ArrayList<JButton>();
@@ -28,7 +43,9 @@ public class WordListGUI extends javax.swing.JFrame {
         StartButton.setText("Start");
         BackButton.setText("Back");
 
+        AddNewButton.addActionListener(this);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        WordList wl = myWordBook.MyLists.get(wl_idx);
         setTitle(wl.WordListName);
 
         for (WordEntry we : wl.ActiveWords) {
