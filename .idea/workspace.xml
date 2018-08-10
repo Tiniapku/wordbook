@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812d3ea4-7bb5-4e3d-8b5b-d652c781d972" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GUI/AddNewGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/CreateNewListGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordbook/AddNewGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordbook/AddNewGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordbook/WordBookGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordbook/WordBookGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordbook/WordBookGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordbook/WordBookGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wordbook/WordListGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wordbook/WordListGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/AddNewGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/AddNewGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/WordBookGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/WordBookGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/WordListGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/WordListGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/WordEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/WordEntry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3563496">
+    <splitter split-orientation="horizontal" split-proportion="0.43509614">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="WordEntry.java" pinned="false" current-in-tab="false">
@@ -32,8 +36,8 @@
           <file leaf-file-name="WordListGUI.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/GUI/WordListGUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="382">
-                  <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+                <state relative-caret-position="136">
+                  <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -41,14 +45,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AddNewGUI.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/GUI/AddNewGUI.java">
+          <file leaf-file-name="CreateNewListGUI.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/GUI/CreateNewListGUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="539">
-                  <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+                <state relative-caret-position="461">
+                  <caret line="73" column="10" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="75" selection-end-column="11" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#initialContents#0;class#AddNewGUI#0" />
+                    <element signature="e#178#179#0" expanded="true" />
+                    <element signature="e#200#201#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="WordList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/util/WordList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="525">
+                  <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#848#849#0" expanded="true" />
+                    <element signature="e#882#883#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -61,8 +79,20 @@
           <file leaf-file-name="WordBookGUI.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/GUI/WordBookGUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="73" column="83" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="83" />
+                <state relative-caret-position="1365">
+                  <caret line="93" column="51" lean-forward="true" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddNewGUI.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/GUI/AddNewGUI.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-358">
+                  <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -80,6 +110,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>actionListener</find>
+      <find>Active</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,16 +139,18 @@
         <option value="$PROJECT_DIR$/src/wbpkg/GUI/WordBookGUI.java" />
         <option value="$PROJECT_DIR$/src/WordBookGUI.java" />
         <option value="$PROJECT_DIR$/src/util/WordEntry.java" />
-        <option value="$PROJECT_DIR$/src/GUI/WordBookGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CreateNewList.java" />
         <option value="$PROJECT_DIR$/src/GUI/WordListGUI.java" />
         <option value="$PROJECT_DIR$/src/GUI/AddNewGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/WordBookGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CreateNewListGUI.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1703" />
+    <option name="x" value="1680" />
     <option name="y" value="23" />
-    <option name="width" value="2294" />
+    <option name="width" value="1887" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectView">
@@ -248,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1703" y="23" width="2294" height="977" extended-state="0" />
+    <frame x="1680" y="23" width="1887" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -259,13 +297,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20487265" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20487265" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="IvyIDEA" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09721012" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118177004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -329,17 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/WordList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/WordBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -354,20 +381,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/WordBookGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/util/WordList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="73" column="83" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="83" />
+        <state relative-caret-position="525">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/WordListGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -376,11 +404,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/AddNewGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+        <state relative-caret-position="-358">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#initialContents#0;class#AddNewGUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/WordBookGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="93" column="51" lean-forward="true" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CreateNewListGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="73" column="10" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="75" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
           </folding>
         </state>
       </provider>

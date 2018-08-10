@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 public class AddNewGUI extends WordBookGUI
                        implements ActionListener {
 
-    JLabel AddNew;
     JLabel Word;
     JLabel Definition;
     JLabel Example;
@@ -19,11 +18,14 @@ public class AddNewGUI extends WordBookGUI
 
     int idx;
 
-    public AddNewGUI(int idx) {this.idx = idx; initComponents();}
+    public AddNewGUI(int idx) {this.idx = idx; initComponents(); SetActionListener();}
 
-
+    private void SetActionListener() {
+        this.Add.addActionListener(this);
+        this.Cancel.addActionListener(this);
+    }
     private void initialContents() {
-        AddNew = new JLabel();
+        this.Title = new JLabel();
         Word = new JLabel();
         Definition = new JLabel();
         Example = new JLabel();
@@ -36,7 +38,7 @@ public class AddNewGUI extends WordBookGUI
         TEx = new JTextField();
         TAns = new JTextField();
 
-        AddNew.setText("AddNew");
+        Title.setText("AddNew");
         Word.setText("Word");
         Definition.setText("Definition");
         Example.setText("Example");
@@ -60,7 +62,7 @@ public class AddNewGUI extends WordBookGUI
         getContentPane().setLayout(layout);
 
         GroupLayout.SequentialGroup hGroup = layout.createSequentialGroup();
-        hGroup.addGroup(layout.createParallelGroup().addComponent(AddNew)
+        hGroup.addGroup(layout.createParallelGroup().addComponent(Title)
                 .addComponent(Word)
                 .addComponent(Definition)
                 .addComponent(Example)
@@ -75,7 +77,7 @@ public class AddNewGUI extends WordBookGUI
 
         layout.setHorizontalGroup(hGroup);
         GroupLayout.SequentialGroup vGroup = layout.createSequentialGroup();
-        vGroup.addGroup(layout.createParallelGroup().addComponent(AddNew));
+        vGroup.addGroup(layout.createParallelGroup().addComponent(Title));
         vGroup.addGroup(layout.createParallelGroup().addComponent(Word).addComponent(TWord));
         vGroup.addGroup(layout.createParallelGroup().addComponent(Definition).addComponent(TDef));
         vGroup.addGroup(layout.createParallelGroup().addComponent(Example).addComponent(TEx));
@@ -87,10 +89,15 @@ public class AddNewGUI extends WordBookGUI
 
     }
     public void actionPerformed(ActionEvent e) {
-        WordEntry wd = new WordEntry(TWord.getText(), TDef.getText(), TEx.getText(), TAns.getText());
-        myWordBook.MyLists.get(this.idx).add_a_word(wd);
+        if (e.getSource() == Add) {
+            WordEntry wd = new WordEntry(TWord.getText(), TDef.getText(), TEx.getText(), TAns.getText());
+            myWordBook.MyLists.get(this.idx).add_a_word(wd);
+//            for (WordEntry word : myWordBook.MyLists.get(this.idx).ActiveWords) {
+//                System.out.println(word.word);
+//            }
+        }
 
-        
+
     }
 }
 
